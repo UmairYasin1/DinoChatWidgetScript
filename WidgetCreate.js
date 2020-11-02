@@ -1,6 +1,6 @@
 
 
-var link = "https://umairyasin1-dinochat.glitch.me/visitor/visitorsignup";
+var link = "https://dinochat.glitch.me/visitor/visitorsignup";
 var wHTML = "";
     wHTML += ('<iframe width="400" height="440"'); 
     wHTML += ('src="'+ link +'"'); 
