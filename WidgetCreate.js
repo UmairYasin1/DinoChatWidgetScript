@@ -10,8 +10,8 @@
 
 var link = "https://dinochat.glitch.me/visitor/visitorsignup";
 var wHTML = "";
-    wHTML += ('<div width="400" height="440" type="text/html" style="background: transparent;border: none;">'); 
+    //wHTML += ('<div width="400" height="440" type="text/html" style="background: transparent;border: none;">'); 
     wHTML += ('<link rel="import" href="'+ link +'">'); 
-    wHTML += ('</div>'); 
+    //wHTML += ('</div>'); 
     document.getElementById('ChatWidget').innerHTML = wHTML;
 
