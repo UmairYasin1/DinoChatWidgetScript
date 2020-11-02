@@ -4,13 +4,30 @@
 </head>
 <body>
   
-<script type='text/javascript' crossorigin="">
+<!-- <script type='text/javascript'>
     var link = "https://testwidget.glitch.me/";
     document.write('<div class="chatwidget" id="ChatWidget"></div>');
     document.write('<link href="'+ link +'chatwidget.css" rel="stylesheet" async>');
     document.write('<script type="text/javascript" src="'+ link +'WidgetCreate.js" async></scr'+'ipt>');
-    
+</script> -->
+<script type='text/javascript'>
+
+    var link = "https://testwidget.glitch.me/"
+    document.write('<div class="chatwidget" id="ChatWidget"></div>');
+    document.write('<link href="'+ link +'chatwidget.css" rel="stylesheet" async>');
+    (function(){
+        
+        var s1=document.createElement('script'), s0=document.getElementsByTagName('script')[0];
+        s1.async=true;
+        s1.src= link +'WidgetCreate.js';
+        s1.charset='UTF-8';
+        //s1.setAttribute('crossorigin','anonymous');
+        s1.crossOrigin='anonymous';
+        s0.parentNode.insertBefore(s1,s0);
+
+    })();
 </script>
+
 
 <!-- <embed width="400" height="440" src="https://dinochat.glitch.me/visitor/visitorsignup"> -->
 
